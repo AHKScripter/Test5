@@ -1,12 +1,12 @@
 #include "../catch/testing.hpp"
-#include "../calcApp/TRPO_Functions.cpp"
+#include "../calcApp/TRPO_Functions.h"
 
 struct test_FirstAndTrivial: TestCase {
 	
   void run() override {
 
-    ASSERT_TRUE(sum(2, 3) == 5);
-    ASSERT_TRUE(sum(2, 3) == 5);
+        ASSERT_TRUE(sum(2, 3) == 5);
+        ASSERT_TRUE(sum(2, 3) == 5);
 	ASSERT_TRUE(sum(-2, -3) == -5);
 	ASSERT_TRUE(sum(0, 0) == 0);
 	ASSERT_TRUE(sum(-8, 3) == -5);
